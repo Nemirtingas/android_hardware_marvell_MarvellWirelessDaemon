@@ -536,6 +536,9 @@ int main(void)
         ALOGE("serv_listen error.\n");
         return -1;
     }
+
+    wifi_enable();
+
     ALOGI("succeed to create socket and listen.\n");
     while (!flag_exit)
     {
